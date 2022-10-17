@@ -17,8 +17,34 @@ The workflow for simulation is as follows.
    (https://www.inference.org.uk/mackay/codes/data.html).
    
    There you can look for some of the matrices of interest in the alist
-   format. Use the instructions on the "convert_alist_to_csc.ipynb" notebook
+   format. Use the instructions on the `convert_alist_to_csc.ipynb` notebook
    to convert it into the required files.
    
 1. Adjust the parameters in the "sw_test.cpp" file. 
+   
+   - n_rows (number of rows of the parity check matrix)
+   - n_cols (number of columns of the parity check matrix)
+   - sweep_min (start of the BSC crossover parameter sweep)
+   - sweep_max (end of the BSC crossover parameter sweep)
+   - steps (number of points to sweep)
+   
+  
+2. Go into the root directory `information theory`
 
+   ```
+   cmake --build cmake-build-debug --target information_theory -- -j 19
+   ```
+   
+3. Run the simulation by executing the file
+   ```
+   ./cmake-build-debug/information_theory 
+   ```
+   
+   Once the simulation is done, two files will be saved in the main directory,
+   one containing the given crossover probability, and the other one containg the 
+   measured Frame error rate.
+   
+   The simulation is heavily inspired by the following repository:
+   https://github.com/XQP-Munich/LDPC4QKD
+   Credit is also due to the following repository, handling the numpy array integration into C++
+   https://github.com/llohse/libnpy
