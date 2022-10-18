@@ -30,15 +30,15 @@ The workflow for simulation is as follows.
    - steps (number of points to sweep)
    
   
-2. Go into the root directory `information theory`
+2. Go into the root directory `information theory` adn built the project
 
    ```
-   cmake --build cmake-build-debug --target information_theory -- -j 19
+   g++ sw_test.cpp simulation_utils.cpp encoding_decoding.cpp -o simulation
    ```
    
 3. Run the simulation by executing the file
    ```
-   ./cmake-build-debug/information_theory 
+   ./simulation
    ```
    
    Once the simulation is done, two files will be saved in the results directory,
