@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/information_theory.dir/simulation_utils.cpp.o CMakeFiles/information_theory.dir/sw_test.cpp.o CMakeFiles/information_theory.dir/encoding_decoding.cpp.o -o information_theory 
