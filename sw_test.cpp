@@ -79,10 +79,10 @@ uint16_t n_cols = 1908;
 double sweep_min = 0.01088889;
 double sweep_max = 0.01444445;
 int sweep_steps = 5;
-const char * path = {"../codes/1908_212_4_colmn_pointers.npy"};
-const char * path2 = {"../codes/1908_212_4_row_index.npy"};
-string path_fer("../results/fer_detail_1908_212_4_big_error");
-string path_p("../results/p_detail_1908_212_4_big_error");
+const char * path = {"codes/1908_212_4_colmn_pointers.npy"};
+const char * path2 = {"codes/1908_212_4_row_index.npy"};
+string path_fer("results/fer_detail_1908_212_4_big_error");
+string path_p("results/p_detail_1908_212_4_big_error");
 int number_of_samples = 100;
 
 // templates in relation to numpy arrays
