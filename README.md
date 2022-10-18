@@ -20,7 +20,8 @@ The workflow for simulation is as follows.
    format. Use the instructions on the `convert_alist_to_csc.ipynb` notebook
    to convert it into the required files.
    
-1. Adjust the parameters in the "sw_test.cpp" file. 
+1. Run with the preset example of a code of blocksize 1908 or
+   Adjust the parameters in the "sw_test.cpp" file. 
    
    - n_rows (number of rows of the parity check matrix)
    - n_cols (number of columns of the parity check matrix)
@@ -40,7 +41,7 @@ The workflow for simulation is as follows.
    ./cmake-build-debug/information_theory 
    ```
    
-   Once the simulation is done, two files will be saved in the main directory,
+   Once the simulation is done, two files will be saved in the results directory,
    one containing the given crossover probability, and the other one containg the 
    measured Frame error rate.
    
@@ -48,3 +49,9 @@ The workflow for simulation is as follows.
    https://github.com/XQP-Munich/LDPC4QKD
    Credit is also due to the following repository, handling the numpy array integration into C++
    https://github.com/llohse/libnpy
+   
+4. Plot the results using the notebook `plot_cpp_data.ipynb`.
+   ![plot](LDPC_fer_plot_sw.png)
+   
+   
+   Please keep in mind that this is a simple coursework project, with the corresponding sophistication.
